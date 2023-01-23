@@ -13,6 +13,8 @@
 		BBC78623297E53F400C5BFEE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78622297E53F400C5BFEE /* HomeView.swift */; };
 		BBC78626297E543900C5BFEE /* TopMoversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78625297E543900C5BFEE /* TopMoversView.swift */; };
 		BBC78628297E544200C5BFEE /* TopMoversItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78627297E544200C5BFEE /* TopMoversItemView.swift */; };
+		BBC7862A297E5C1400C5BFEE /* AllCoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78629297E5C1400C5BFEE /* AllCoinsView.swift */; };
+		BBC7862C297E5C1A00C5BFEE /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7862B297E5C1A00C5BFEE /* CoinRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		BBC78622297E53F400C5BFEE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BBC78625297E543900C5BFEE /* TopMoversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversView.swift; sourceTree = "<group>"; };
 		BBC78627297E544200C5BFEE /* TopMoversItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversItemView.swift; sourceTree = "<group>"; };
+		BBC78629297E5C1400C5BFEE /* AllCoinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoinsView.swift; sourceTree = "<group>"; };
+		BBC7862B297E5C1A00C5BFEE /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				BBC78622297E53F400C5BFEE /* HomeView.swift */,
+				BBC78629297E5C1400C5BFEE /* AllCoinsView.swift */,
+				BBC7862B297E5C1A00C5BFEE /* CoinRowView.swift */,
 				BBC78625297E543900C5BFEE /* TopMoversView.swift */,
 				BBC78627297E544200C5BFEE /* TopMoversItemView.swift */,
 			);
@@ -207,8 +213,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBC7862C297E5C1A00C5BFEE /* CoinRowView.swift in Sources */,
 				BBC7860C297E536200C5BFEE /* crypto_trakerApp.swift in Sources */,
 				BBC78626297E543900C5BFEE /* TopMoversView.swift in Sources */,
+				BBC7862A297E5C1400C5BFEE /* AllCoinsView.swift in Sources */,
 				BBC78623297E53F400C5BFEE /* HomeView.swift in Sources */,
 				BBC78628297E544200C5BFEE /* TopMoversItemView.swift in Sources */,
 			);
