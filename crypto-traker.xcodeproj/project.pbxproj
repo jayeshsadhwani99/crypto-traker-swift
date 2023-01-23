@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		BBC7860C297E536200C5BFEE /* crypto_trakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7860B297E536200C5BFEE /* crypto_trakerApp.swift */; };
-		BBC7860E297E536200C5BFEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7860D297E536200C5BFEE /* ContentView.swift */; };
 		BBC78610297E536300C5BFEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC7860F297E536300C5BFEE /* Assets.xcassets */; };
 		BBC78613297E536300C5BFEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC78612297E536300C5BFEE /* Preview Assets.xcassets */; };
+		BBC78623297E53F400C5BFEE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78622297E53F400C5BFEE /* HomeView.swift */; };
+		BBC78626297E543900C5BFEE /* TopMoversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78625297E543900C5BFEE /* TopMoversView.swift */; };
+		BBC78628297E544200C5BFEE /* TopMoversItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78627297E544200C5BFEE /* TopMoversItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BBC78608297E536200C5BFEE /* crypto-traker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crypto-traker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC7860B297E536200C5BFEE /* crypto_trakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crypto_trakerApp.swift; sourceTree = "<group>"; };
-		BBC7860D297E536200C5BFEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BBC7860F297E536300C5BFEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBC78612297E536300C5BFEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BBC78622297E53F400C5BFEE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BBC78625297E543900C5BFEE /* TopMoversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversView.swift; sourceTree = "<group>"; };
+		BBC78627297E544200C5BFEE /* TopMoversItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,11 @@
 		BBC7860A297E536200C5BFEE /* crypto-traker */ = {
 			isa = PBXGroup;
 			children = (
-				BBC7860B297E536200C5BFEE /* crypto_trakerApp.swift */,
-				BBC7860D297E536200C5BFEE /* ContentView.swift */,
+				BBC7861D297E538700C5BFEE /* Utils */,
+				BBC7861B297E537C00C5BFEE /* Extensions */,
+				BBC7861A297E537A00C5BFEE /* Models */,
+				BBC78619297E537400C5BFEE /* Core */,
+				BBC7861E297E538900C5BFEE /* App */,
 				BBC7860F297E536300C5BFEE /* Assets.xcassets */,
 				BBC78611297E536300C5BFEE /* Preview Content */,
 			);
@@ -65,6 +72,69 @@
 				BBC78612297E536300C5BFEE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BBC78619297E537400C5BFEE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BBC7861F297E53CE00C5BFEE /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BBC7861A297E537A00C5BFEE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BBC7861B297E537C00C5BFEE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BBC7861D297E538700C5BFEE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BBC7861E297E538900C5BFEE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BBC7860B297E536200C5BFEE /* crypto_trakerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BBC7861F297E53CE00C5BFEE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BBC78621297E53E400C5BFEE /* Views */,
+				BBC78620297E53DA00C5BFEE /* ViewModels */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BBC78620297E53DA00C5BFEE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BBC78621297E53E400C5BFEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BBC78622297E53F400C5BFEE /* HomeView.swift */,
+				BBC78625297E543900C5BFEE /* TopMoversView.swift */,
+				BBC78627297E544200C5BFEE /* TopMoversItemView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBC7860E297E536200C5BFEE /* ContentView.swift in Sources */,
 				BBC7860C297E536200C5BFEE /* crypto_trakerApp.swift in Sources */,
+				BBC78626297E543900C5BFEE /* TopMoversView.swift in Sources */,
+				BBC78623297E53F400C5BFEE /* HomeView.swift in Sources */,
+				BBC78628297E544200C5BFEE /* TopMoversItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

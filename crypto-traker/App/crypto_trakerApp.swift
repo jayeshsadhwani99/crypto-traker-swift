@@ -11,7 +11,7 @@ import SwiftUI
 struct crypto_trakerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
