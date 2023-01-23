@@ -174,8 +174,7 @@
 		BBC78638297E938400C5BFEE /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				BBC78639297E939400C5BFEE /* CircleButtonView.swift */,
-				BBC7863B297E969100C5BFEE /* CircleButtonAnimationView.swift */,
+				BBC78644297ED6A100C5BFEE /* CircleButton */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -186,6 +185,15 @@
 				BBC78642297ECCC600C5BFEE /* NetworkingManager.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		BBC78644297ED6A100C5BFEE /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				BBC78639297E939400C5BFEE /* CircleButtonView.swift */,
+				BBC7863B297E969100C5BFEE /* CircleButtonAnimationView.swift */,
+			);
+			path = CircleButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
