@@ -9,13 +9,19 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var viewModel: HomeViewModel
-    @State private var showPortfolio: Bool = false
+    @State private var showPortfolio: Bool = false // swipe right
+    
+    @State private var showPortfolioView: Bool = false // shows portfolio page
     
     var body: some View {
         ZStack (alignment: .leading) {
             // background layer
             Color.theme.background
                 .ignoresSafeArea()
+                .sheet(isPresented: $showPortfolioView) {
+                    PortfolioView()
+                }
+
             
             // content
             VStack {
@@ -43,7 +49,6 @@ struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             HomeView()
-                .toolbar(.hidden)
         }
         .environmentObject(dev.homeVM)
     }
@@ -54,6 +59,11 @@ extension HomeView {
         HStack {
             CircleButtonView(iconName: showPortfolio ? "plus" : "info")
                 .animation(.none)
+                .onTapGesture {
+                    if (showPortfolio) {
+                        showPortfolioView.toggle()
+                    }
+                }
                 .background(CircleButtonAnimationView(animate: $showPortfolio))
             
             Spacer()

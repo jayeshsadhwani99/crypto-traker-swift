@@ -32,6 +32,9 @@
 		BBC7864F297EF72200C5BFEE /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7864E297EF72200C5BFEE /* HomeStatsView.swift */; };
 		BBC78651297EFDFE00C5BFEE /* MarketData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78650297EFDFE00C5BFEE /* MarketData.swift */; };
 		BBC78653297EFED700C5BFEE /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78652297EFED700C5BFEE /* MarketDataService.swift */; };
+		BBC78655297F043000C5BFEE /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78654297F042F00C5BFEE /* PortfolioView.swift */; };
+		BBC78657297F054800C5BFEE /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78656297F054800C5BFEE /* XMarkButton.swift */; };
+		BBC7865A297F0EA300C5BFEE /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78659297F0EA200C5BFEE /* CoinLogoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,9 @@
 		BBC7864E297EF72200C5BFEE /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
 		BBC78650297EFDFE00C5BFEE /* MarketData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketData.swift; sourceTree = "<group>"; };
 		BBC78652297EFED700C5BFEE /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
+		BBC78654297F042F00C5BFEE /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
+		BBC78656297F054800C5BFEE /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
+		BBC78659297F0EA200C5BFEE /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +192,7 @@
 				BBC78625297E543900C5BFEE /* TopMoversView.swift */,
 				BBC78627297E544200C5BFEE /* TopMoversItemView.swift */,
 				BBC7864E297EF72200C5BFEE /* HomeStatsView.swift */,
+				BBC78654297F042F00C5BFEE /* PortfolioView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,9 +200,11 @@
 		BBC78638297E938400C5BFEE /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BBC78658297F0E9A00C5BFEE /* Coin */,
 				BBC78644297ED6A100C5BFEE /* CircleButton */,
 				BBC78646297EDDC400C5BFEE /* SearchBarView.swift */,
 				BBC7864C297EF24000C5BFEE /* StatisticView.swift */,
+				BBC78656297F054800C5BFEE /* XMarkButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -215,6 +224,14 @@
 				BBC7863B297E969100C5BFEE /* CircleButtonAnimationView.swift */,
 			);
 			path = CircleButton;
+			sourceTree = "<group>";
+		};
+		BBC78658297F0E9A00C5BFEE /* Coin */ = {
+			isa = PBXGroup;
+			children = (
+				BBC78659297F0EA200C5BFEE /* CoinLogoView.swift */,
+			);
+			path = Coin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBC7864B297EF19400C5BFEE /* Statistic.swift in Sources */,
+				BBC7865A297F0EA300C5BFEE /* CoinLogoView.swift in Sources */,
 				BBC7862C297E5C1A00C5BFEE /* CoinRowView.swift in Sources */,
 				BBC7860C297E536200C5BFEE /* crypto_trakerApp.swift in Sources */,
 				BBC78640297EC71F00C5BFEE /* CoinDataService.swift in Sources */,
@@ -304,11 +322,13 @@
 				BBC78637297E8D7200C5BFEE /* Color.swift in Sources */,
 				BBC78626297E543900C5BFEE /* TopMoversView.swift in Sources */,
 				BBC7864F297EF72200C5BFEE /* HomeStatsView.swift in Sources */,
+				BBC78657297F054800C5BFEE /* XMarkButton.swift in Sources */,
 				BBC7862A297E5C1400C5BFEE /* AllCoinsView.swift in Sources */,
 				BBC78623297E53F400C5BFEE /* HomeView.swift in Sources */,
 				BBC7863A297E939400C5BFEE /* CircleButtonView.swift in Sources */,
 				BBC78649297EEC1100C5BFEE /* UIApplication.swift in Sources */,
 				BBC7864D297EF24000C5BFEE /* StatisticView.swift in Sources */,
+				BBC78655297F043000C5BFEE /* PortfolioView.swift in Sources */,
 				BBC78630297E670B00C5BFEE /* Coin.swift in Sources */,
 				BBC78653297EFED700C5BFEE /* MarketDataService.swift in Sources */,
 				BBC78635297E72B300C5BFEE /* Double.swift in Sources */,
