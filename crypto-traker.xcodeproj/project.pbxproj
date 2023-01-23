@@ -18,6 +18,7 @@
 		BBC7862E297E61B200C5BFEE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7862D297E61B200C5BFEE /* HomeViewModel.swift */; };
 		BBC78630297E670B00C5BFEE /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7862F297E670B00C5BFEE /* Coin.swift */; };
 		BBC78633297E720000C5BFEE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BBC78632297E720000C5BFEE /* Kingfisher */; };
+		BBC78635297E72B300C5BFEE /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78634297E72B300C5BFEE /* Double.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BBC7862B297E5C1A00C5BFEE /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		BBC7862D297E61B200C5BFEE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		BBC7862F297E670B00C5BFEE /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		BBC78634297E72B300C5BFEE /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		BBC7861B297E537C00C5BFEE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BBC78634297E72B300C5BFEE /* Double.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				BBC7862A297E5C1400C5BFEE /* AllCoinsView.swift in Sources */,
 				BBC78623297E53F400C5BFEE /* HomeView.swift in Sources */,
 				BBC78630297E670B00C5BFEE /* Coin.swift in Sources */,
+				BBC78635297E72B300C5BFEE /* Double.swift in Sources */,
 				BBC78628297E544200C5BFEE /* TopMoversItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
