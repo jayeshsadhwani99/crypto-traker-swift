@@ -30,6 +30,8 @@
 		BBC7864B297EF19400C5BFEE /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7864A297EF19400C5BFEE /* Statistic.swift */; };
 		BBC7864D297EF24000C5BFEE /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7864C297EF24000C5BFEE /* StatisticView.swift */; };
 		BBC7864F297EF72200C5BFEE /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7864E297EF72200C5BFEE /* HomeStatsView.swift */; };
+		BBC78651297EFDFE00C5BFEE /* MarketData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78650297EFDFE00C5BFEE /* MarketData.swift */; };
+		BBC78653297EFED700C5BFEE /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78652297EFED700C5BFEE /* MarketDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		BBC7864A297EF19400C5BFEE /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
 		BBC7864C297EF24000C5BFEE /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		BBC7864E297EF72200C5BFEE /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
+		BBC78650297EFDFE00C5BFEE /* MarketData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketData.swift; sourceTree = "<group>"; };
+		BBC78652297EFED700C5BFEE /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 			children = (
 				BBC7862F297E670B00C5BFEE /* Coin.swift */,
 				BBC7864A297EF19400C5BFEE /* Statistic.swift */,
+				BBC78650297EFDFE00C5BFEE /* MarketData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				BBC7863F297EC71F00C5BFEE /* CoinDataService.swift */,
+				BBC78652297EFED700C5BFEE /* MarketDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -292,6 +298,7 @@
 				BBC7860C297E536200C5BFEE /* crypto_trakerApp.swift in Sources */,
 				BBC78640297EC71F00C5BFEE /* CoinDataService.swift in Sources */,
 				BBC78643297ECCC600C5BFEE /* NetworkingManager.swift in Sources */,
+				BBC78651297EFDFE00C5BFEE /* MarketData.swift in Sources */,
 				BBC78647297EDDC400C5BFEE /* SearchBarView.swift in Sources */,
 				BBC7862E297E61B200C5BFEE /* HomeViewModel.swift in Sources */,
 				BBC78637297E8D7200C5BFEE /* Color.swift in Sources */,
@@ -303,6 +310,7 @@
 				BBC78649297EEC1100C5BFEE /* UIApplication.swift in Sources */,
 				BBC7864D297EF24000C5BFEE /* StatisticView.swift in Sources */,
 				BBC78630297E670B00C5BFEE /* Coin.swift in Sources */,
+				BBC78653297EFED700C5BFEE /* MarketDataService.swift in Sources */,
 				BBC78635297E72B300C5BFEE /* Double.swift in Sources */,
 				BBC78628297E544200C5BFEE /* TopMoversItemView.swift in Sources */,
 				BBC7863C297E969100C5BFEE /* CircleButtonAnimationView.swift in Sources */,
