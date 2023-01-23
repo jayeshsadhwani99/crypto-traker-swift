@@ -17,7 +17,6 @@ struct TopMoversItemView: View {
             KFImage(URL(string: coin.image))
                 .resizable()
                 .frame(width: 32, height: 32)
-                .foregroundColor(.orange)
                 .padding(.bottom, 8)
             
             // coin info
@@ -34,10 +33,10 @@ struct TopMoversItemView: View {
             // coin percentage
             Text(coin.priceChangePercentage24H.toPercentString())
                 .font(.title2)
-                .foregroundColor(coin.priceChangePercentage24H > 0 ? .green : .red)
+                .foregroundColor(coin.priceChangePercentage24H > 0 ? Color.theme.green : Color.theme.red)
         }
         .frame(width: 140, height: 140)
-        .background(Color("ItemBackgroundColor"))
+        .background(Color.theme.itemBackgroundColor)
         .overlay(
             RoundedRectangle(cornerRadius: 10)
                 .stroke(Color(.systemGray4), lineWidth: 2)

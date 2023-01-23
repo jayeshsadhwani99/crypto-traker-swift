@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct AllCoinsView: View {
-    @StateObject var viewModel: HomeViewModel
+    @EnvironmentObject var viewModel: HomeViewModel
+    let isPortfolio: Bool
+    
+    init(isPortfolio: Bool = false) {
+        self.isPortfolio = isPortfolio
+    }
     
     var body: some View {
         VStack (alignment: .leading) {
-            Text("All coins")
+            Text(isPortfolio ? "Your coins" : "All coins")
                 .font(.headline)
                 .padding()
             
@@ -22,15 +27,20 @@ struct AllCoinsView: View {
                 Spacer()
                 
                 Text("Prices")
+                
+                if isPortfolio {
+                    Text("Holdings")
+                        .frame(width: UIScreen.main.bounds.width / 4, alignment: .trailing)
+                }
             }
-            .foregroundColor(.gray)
+            .foregroundColor(Color.theme.secondaryColor)
             .padding(.horizontal)
             .font(.caption)
             
             ScrollView {
                 VStack {
-                    ForEach(viewModel.coins) { coin in
-                        CoinRowView(coin: coin)
+                    ForEach(isPortfolio ? viewModel.portfolioCoins : viewModel.coins) { coin in
+                        CoinRowView(coin: coin, isPortfolio: isPortfolio)
                     }
                 }
             }
@@ -38,8 +48,9 @@ struct AllCoinsView: View {
     }
 }
 
-//struct AllCoinsView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        AllCoinsView()
-//    }
-//}
+struct AllCoinsView_Previews: PreviewProvider {
+    static var previews: some View {
+        AllCoinsView(isPortfolio: false)
+            .environmentObject(dev.homeVM)
+    }
+}
