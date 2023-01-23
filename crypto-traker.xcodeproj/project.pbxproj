@@ -15,6 +15,7 @@
 		BBC78628297E544200C5BFEE /* TopMoversItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78627297E544200C5BFEE /* TopMoversItemView.swift */; };
 		BBC7862A297E5C1400C5BFEE /* AllCoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78629297E5C1400C5BFEE /* AllCoinsView.swift */; };
 		BBC7862C297E5C1A00C5BFEE /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7862B297E5C1A00C5BFEE /* CoinRowView.swift */; };
+		BBC7862E297E61B200C5BFEE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7862D297E61B200C5BFEE /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		BBC78627297E544200C5BFEE /* TopMoversItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversItemView.swift; sourceTree = "<group>"; };
 		BBC78629297E5C1400C5BFEE /* AllCoinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoinsView.swift; sourceTree = "<group>"; };
 		BBC7862B297E5C1A00C5BFEE /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
+		BBC7862D297E61B200C5BFEE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		BBC78620297E53DA00C5BFEE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				BBC7862D297E61B200C5BFEE /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			files = (
 				BBC7862C297E5C1A00C5BFEE /* CoinRowView.swift in Sources */,
 				BBC7860C297E536200C5BFEE /* crypto_trakerApp.swift in Sources */,
+				BBC7862E297E61B200C5BFEE /* HomeViewModel.swift in Sources */,
 				BBC78626297E543900C5BFEE /* TopMoversView.swift in Sources */,
 				BBC7862A297E5C1400C5BFEE /* AllCoinsView.swift in Sources */,
 				BBC78623297E53F400C5BFEE /* HomeView.swift in Sources */,
