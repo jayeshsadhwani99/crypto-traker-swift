@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct DetailLoadingView: View {
     @Binding var coin: Coin?
@@ -49,10 +50,16 @@ struct DetailView: View {
                 
                 additionalGrid
                 
-                            }
+            }
             .padding()
         }
         .navigationTitle(viewModel.coin.name)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                navigationBarTrailingItems
+            }
+        }
+        .background(Color.theme.background)
     }
 }
 
@@ -65,6 +72,19 @@ struct DetailView_Previews: PreviewProvider {
 }
 
 extension DetailView {
+    private var navigationBarTrailingItems: some View {
+        HStack {
+            Text(viewModel.coin.symbol.uppercased())
+                .font(.headline)
+                .foregroundColor(Color.theme.secondaryColor)
+            
+            KFImage(URL(string: viewModel.coin.image))
+                .resizable()
+                .scaledToFit()
+                .frame(width: 25, height: 25)
+        }
+    }
+    
     private var overviewTitle: some View {
         Text("Overview")
             .font(.title)
