@@ -26,6 +26,13 @@ struct AllCoinsView: View {
             
             listHeader
             
+            if isPortfolio {
+                ZStack(alignment: .top) {
+                    if viewModel.portfolioCoins.isEmpty && viewModel.searchText.isEmpty {
+                        emptyPortfolioText
+                    }
+                }
+            }
             coinsList
         }
         .background(
@@ -124,5 +131,13 @@ extension AllCoinsView {
         .padding(.horizontal)
         .font(.caption)
 
+    }
+    
+    private var emptyPortfolioText: some View {
+        Text("You haven't added any coins in your portfolio yet. Click on the + button to get started. 🧐")
+            .font(.callout)
+            .foregroundColor(Color.theme.accent)
+            .multilineTextAlignment(.center)
+            .padding(50)
     }
 }
