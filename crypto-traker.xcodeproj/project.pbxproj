@@ -43,6 +43,8 @@
 		BBC7866A297FE27500C5BFEE /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78669297FE27500C5BFEE /* String.swift */; };
 		BBC7866C297FE33800C5BFEE /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7866B297FE33800C5BFEE /* DetailViewModel.swift */; };
 		BBC7866E297FE37F00C5BFEE /* CoinDetailDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7866D297FE37F00C5BFEE /* CoinDetailDataService.swift */; };
+		BBC78670298011E400C5BFEE /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7866F298011E400C5BFEE /* ChartView.swift */; };
+		BBC7867229801E3100C5BFEE /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7867129801E3100C5BFEE /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		BBC78669297FE27500C5BFEE /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		BBC7866B297FE33800C5BFEE /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		BBC7866D297FE37F00C5BFEE /* CoinDetailDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailDataService.swift; sourceTree = "<group>"; };
+		BBC7866F298011E400C5BFEE /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		BBC7867129801E3100C5BFEE /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 				BBC78636297E8D7200C5BFEE /* Color.swift */,
 				BBC7863D297EB80C00C5BFEE /* PreviewProvider.swift */,
 				BBC78669297FE27500C5BFEE /* String.swift */,
+				BBC7867129801E3100C5BFEE /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				BBC78663297FD46200C5BFEE /* DetailView.swift */,
+				BBC7866F298011E400C5BFEE /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -374,6 +380,7 @@
 				BBC78668297FE1F900C5BFEE /* CoinData.swift in Sources */,
 				BBC78626297E543900C5BFEE /* TopMoversView.swift in Sources */,
 				BBC7866C297FE33800C5BFEE /* DetailViewModel.swift in Sources */,
+				BBC7867229801E3100C5BFEE /* Date.swift in Sources */,
 				BBC7864F297EF72200C5BFEE /* HomeStatsView.swift in Sources */,
 				BBC78657297F054800C5BFEE /* XMarkButton.swift in Sources */,
 				BBC78664297FD46200C5BFEE /* DetailView.swift in Sources */,
@@ -385,6 +392,7 @@
 				BBC78655297F043000C5BFEE /* PortfolioView.swift in Sources */,
 				BBC78630297E670B00C5BFEE /* Coin.swift in Sources */,
 				BBC78653297EFED700C5BFEE /* MarketDataService.swift in Sources */,
+				BBC78670298011E400C5BFEE /* ChartView.swift in Sources */,
 				BBC78635297E72B300C5BFEE /* Double.swift in Sources */,
 				BBC7865D297FB79F00C5BFEE /* PortfolioContainer.xcdatamodeld in Sources */,
 				BBC7866E297FE37F00C5BFEE /* CoinDetailDataService.swift in Sources */,
