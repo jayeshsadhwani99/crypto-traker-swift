@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var viewModel: HomeViewModel
     @State private var showPortfolio: Bool = false // swipe right
-    
+    @State private var showSettingsView: Bool = false // shows settings
     @State private var showPortfolioView: Bool = false // shows portfolio page
     
     var body: some View {
@@ -41,6 +41,9 @@ struct HomeView: View {
                     
                 Spacer(minLength: 0)
             }
+            .sheet(isPresented: $showSettingsView) {
+                SettingsView()
+            }
         }
     }
 }
@@ -62,6 +65,8 @@ extension HomeView {
                 .onTapGesture {
                     if (showPortfolio) {
                         showPortfolioView.toggle()
+                    } else {
+                        showSettingsView.toggle()
                     }
                 }
                 .background(CircleButtonAnimationView(animate: $showPortfolio))
