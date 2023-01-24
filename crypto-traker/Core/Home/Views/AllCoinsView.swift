@@ -29,7 +29,7 @@ struct AllCoinsView: View {
             coinsList
         }
         .background(
-            NavigationLink(destination: DetailedLoadingView(coin: $selectedCoin), isActive: $showDetailView, label: {
+            NavigationLink(destination: DetailLoadingView(coin: $selectedCoin), isActive: $showDetailView, label: {
                 EmptyView()
             })
         )
