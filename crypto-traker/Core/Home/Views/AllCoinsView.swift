@@ -32,6 +32,16 @@ struct AllCoinsView: View {
                     Text("Holdings")
                         .frame(width: UIScreen.main.bounds.width / 4, alignment: .trailing)
                 }
+                
+                Button {
+                    withAnimation(.linear(duration: 2.0)) {
+                        viewModel.reloadData()
+                    }
+                } label: {
+                    Image(systemName: "goforward")
+                        .rotationEffect(Angle(degrees: viewModel.isLoading ? 360: 0), anchor: .center)
+                }
+
             }
             .foregroundColor(Color.theme.secondaryColor)
             .padding(.horizontal)

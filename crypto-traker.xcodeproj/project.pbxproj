@@ -37,6 +37,7 @@
 		BBC7865A297F0EA300C5BFEE /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78659297F0EA200C5BFEE /* CoinLogoView.swift */; };
 		BBC7865D297FB79F00C5BFEE /* PortfolioContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBC7865B297FB79F00C5BFEE /* PortfolioContainer.xcdatamodeld */; };
 		BBC7865F297FB82C00C5BFEE /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7865E297FB82C00C5BFEE /* PortfolioDataService.swift */; };
+		BBC78661297FCC7E00C5BFEE /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78660297FCC7E00C5BFEE /* HapticManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		BBC78659297F0EA200C5BFEE /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
 		BBC7865C297FB79F00C5BFEE /* PortfolioContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PortfolioContainer.xcdatamodel; sourceTree = "<group>"; };
 		BBC7865E297FB82C00C5BFEE /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
+		BBC78660297FCC7E00C5BFEE /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				BBC78642297ECCC600C5BFEE /* NetworkingManager.swift */,
+				BBC78660297FCC7E00C5BFEE /* HapticManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			files = (
 				BBC7864B297EF19400C5BFEE /* Statistic.swift in Sources */,
 				BBC7865F297FB82C00C5BFEE /* PortfolioDataService.swift in Sources */,
+				BBC78661297FCC7E00C5BFEE /* HapticManager.swift in Sources */,
 				BBC7865A297F0EA300C5BFEE /* CoinLogoView.swift in Sources */,
 				BBC7862C297E5C1A00C5BFEE /* CoinRowView.swift in Sources */,
 				BBC7860C297E536200C5BFEE /* crypto_trakerApp.swift in Sources */,
