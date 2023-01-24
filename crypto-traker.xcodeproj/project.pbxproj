@@ -38,6 +38,7 @@
 		BBC7865D297FB79F00C5BFEE /* PortfolioContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBC7865B297FB79F00C5BFEE /* PortfolioContainer.xcdatamodeld */; };
 		BBC7865F297FB82C00C5BFEE /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC7865E297FB82C00C5BFEE /* PortfolioDataService.swift */; };
 		BBC78661297FCC7E00C5BFEE /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78660297FCC7E00C5BFEE /* HapticManager.swift */; };
+		BBC78664297FD46200C5BFEE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC78663297FD46200C5BFEE /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		BBC7865C297FB79F00C5BFEE /* PortfolioContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PortfolioContainer.xcdatamodel; sourceTree = "<group>"; };
 		BBC7865E297FB82C00C5BFEE /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
 		BBC78660297FCC7E00C5BFEE /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		BBC78663297FD46200C5BFEE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				BBC78638297E938400C5BFEE /* Components */,
 				BBC7861F297E53CE00C5BFEE /* Home */,
+				BBC78662297FD43900C5BFEE /* Detail */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -243,6 +246,30 @@
 			path = Coin;
 			sourceTree = "<group>";
 		};
+		BBC78662297FD43900C5BFEE /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BBC78666297FD46C00C5BFEE /* ViewModels */,
+				BBC78665297FD46500C5BFEE /* Views */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		BBC78665297FD46500C5BFEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BBC78663297FD46200C5BFEE /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BBC78666297FD46C00C5BFEE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -334,6 +361,7 @@
 				BBC78626297E543900C5BFEE /* TopMoversView.swift in Sources */,
 				BBC7864F297EF72200C5BFEE /* HomeStatsView.swift in Sources */,
 				BBC78657297F054800C5BFEE /* XMarkButton.swift in Sources */,
+				BBC78664297FD46200C5BFEE /* DetailView.swift in Sources */,
 				BBC7862A297E5C1400C5BFEE /* AllCoinsView.swift in Sources */,
 				BBC78623297E53F400C5BFEE /* HomeView.swift in Sources */,
 				BBC7863A297E939400C5BFEE /* CircleButtonView.swift in Sources */,
