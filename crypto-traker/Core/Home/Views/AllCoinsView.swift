@@ -22,15 +22,45 @@ struct AllCoinsView: View {
                 .padding()
             
             HStack {
-                Text("Coin")
+                HStack(spacing: 4) {
+                    Text("Coin")
+                    Image(systemName: "chevron.down")
+                        .opacity((viewModel.sortOption == .rank || viewModel.sortOption == .rankReversed) ? 1.0 : 0.0)
+                        .rotationEffect(Angle(degrees: viewModel.sortOption == .rank ? 0 : 180))
+                }
+                .onTapGesture {
+                    withAnimation(.default) {
+                        viewModel.sortOption = viewModel.sortOption == .rank ? .rankReversed : .rank
+                    }
+                }
                 
                 Spacer()
                 
-                Text("Prices")
+                HStack(spacing: 4)  {
+                    Text("Price")
+                    Image(systemName: "chevron.down")
+                        .opacity((viewModel.sortOption == .price || viewModel.sortOption == .priceReversed) ? 1.0 : 0.0)
+                        .rotationEffect(Angle(degrees: viewModel.sortOption == .price ? 0 : 180))
+                }
+                .onTapGesture {
+                    withAnimation(.default) {
+                        viewModel.sortOption = viewModel.sortOption == .price ? .priceReversed : .price
+                    }
+                }
                 
                 if isPortfolio {
-                    Text("Holdings")
+                    HStack(spacing: 4)  {
+                        Text("Holdings")
+                        Image(systemName: "chevron.down")
+                            .opacity((viewModel.sortOption == .holdings || viewModel.sortOption == .holdingsReversed) ? 1.0 : 0.0)
+                            .rotationEffect(Angle(degrees: viewModel.sortOption == .holdings ? 0 : 180))
+                    }
                         .frame(width: UIScreen.main.bounds.width / 4, alignment: .trailing)
+                        .onTapGesture {
+                            withAnimation(.default) {
+                                viewModel.sortOption = viewModel.sortOption == .holdings ? .holdingsReversed : .holdings
+                            }
+                        }
                 }
                 
                 Button {
@@ -60,7 +90,12 @@ struct AllCoinsView: View {
 
 struct AllCoinsView_Previews: PreviewProvider {
     static var previews: some View {
-        AllCoinsView(isPortfolio: false)
-            .environmentObject(dev.homeVM)
+        Group {
+            AllCoinsView(isPortfolio: false)
+                .environmentObject(dev.homeVM)
+            
+            AllCoinsView(isPortfolio: true)
+                .environmentObject(dev.homeVM)
+        }
     }
 }
