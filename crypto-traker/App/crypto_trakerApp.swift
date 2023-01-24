@@ -22,7 +22,9 @@ struct crypto_trakerApp: App {
             ZStack {
                 NavigationView {
                     HomeView()
-                }.environmentObject(viewModel)
+                }
+                .environmentObject(viewModel)
+                .navigationViewStyle(StackNavigationViewStyle())
                 
                 ZStack {
                     if showLaunchView {
